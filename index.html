@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
 
     <link
       rel="icon"
@@ -22,7 +23,6 @@
       }
 
       body {
-        height: 100vh;
         font-family: sans-serif;
         line-height: 1.5rem;
         
@@ -101,6 +101,70 @@
 
       .author-info a {
         text-decoration: none;
+      }
+
+      /*Tablet and up*/
+
+      @media (min-width: 768px){
+        main{
+          max-width: 700px;
+          padding: 2rem;
+        }
+
+        section article {
+          flex-direction: row;
+          align-items: center;
+        }
+
+        section article img {
+          width: 120px;
+          height: 120px;
+        }
+
+        section article .text {
+          padding-left: 1rem;
+        }
+
+        section article h2 {
+          font-size: 1.2rem;
+        }
+
+        section article time {
+          font-size: 0.8rem;
+        }
+      }
+
+
+      /*Desktop and up*/
+
+      @media (min-width: 1200px){
+        main{
+          max-width: 700px;
+        }
+        
+        .article-header h1 {
+          font-size: 2.2rem;
+          padding: 0 1rem;
+        }
+
+        .seperator{
+          margin-top: 1.85rem;
+        }
+
+        section article {
+          margin-bottom: 2.5rem ;
+        }
+
+        section article img {
+          width: 120px;
+          height: 120px;
+        }
+
+        section article h2 {
+          font-size: 1.21rem;
+        }
+
+        
       }
 
 
